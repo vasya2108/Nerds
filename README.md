@@ -1,2 +1,2 @@
-# _Nerds
- Nerds HTML Academy
+Учебный проект Nёrds
+HTML Academy
