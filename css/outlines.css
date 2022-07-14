@@ -1,0 +1,25 @@
+
+/*
+body > * {
+  outline: 3px solid rgba(255, 20, 147,0.5);
+  outline-offset: -3px;
+}
+body > * > * {
+  outline: 3px solid  rgba(30, 144, 255,0.5);
+  outline-offset: -3px;
+}
+body > * > * > * {
+  outline: 3px dashed rgba(0, 255, 0,0.5);
+  outline-offset: -3px;
+}
+
+body > * > * > * > * {
+  outline: 3px dashed rgba(251, 255, 0, 0.5);
+  outline-offset: -3px;
+}
+
+body > * > * > * > * >* {
+  outline: 3px dashed rgba(22, 24, 168, 0.5);
+  outline-offset: -3px;
+}
+*/
