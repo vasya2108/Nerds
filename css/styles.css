@@ -633,7 +633,7 @@ li {
 }
 
 .contacts{
-  height: 362px;
+  height: 416px;
   margin-bottom: 69px;
   background-color: var(--grey-EE);
   background-image:
@@ -645,10 +645,16 @@ li {
   background-position:
     calc(50% + 127px + 115px) 70px,
     center;
-  padding-top: 54px;
+  /* padding-top: 54px; */
+}
+
+.contacts .container {
+  position: relative;
 }
 
 .contacts-card{
+  position: absolute;
+  top: 54px;
   width: 219px;
   background-color: var(--white);
   padding: 49px 50px 47px;
@@ -1266,19 +1272,42 @@ text-transform: uppercase;
 
 /*modal*/
 
-.modal-feedback {
+.modal{
   position: fixed;
+  display: none;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.modal--show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal--error {
+  animation: shake 0.6s;
+}
+
+.modal-feedback {
   height: min-content;
   width: 760px;
   padding: 63px 100px 84px;
   background-color: var(--white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+/* .modal-feedback::before{
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+} */
 
 .modal-feedback fieldset{
   margin: 0;
@@ -1387,3 +1416,44 @@ text-transform: uppercase;
   opacity: 0.1;
 }
 
+/* animation*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
