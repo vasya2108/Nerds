@@ -1,10 +1,9 @@
 let sliderButtons = document.querySelectorAll('.slider__change-button');
 let slides = document.querySelectorAll('.main-slider__item');
 
-console.log(sliderButtons.length);
+// console.log(sliderButtons.length);
 
-console.log(slides.length);
-
+// console.log(slides.length);
 
 let  addSliderButtonEvent = function(sliderButton, slider) {
   sliderButton.addEventListener('click', function(evt) {
@@ -20,7 +19,6 @@ let  addSliderButtonEvent = function(sliderButton, slider) {
     }
   });
 };
-
 
 for (let i=0; i < sliderButtons.length; i++) {
   addSliderButtonEvent(sliderButtons[i], slides[i]);
