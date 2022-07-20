@@ -1,7 +1,7 @@
 let sliderButtons = document.querySelectorAll('.slider__change-button');
 let slides = document.querySelectorAll('.main-slider__item');
 
-// console.log(sliderButtons.length);
+// console.log(sliderButtons.length) ;
 
 // console.log(slides.length);
 
